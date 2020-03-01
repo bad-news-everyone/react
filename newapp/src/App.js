@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { sum } from './math.js';
-import { App2 } from './math.js';
+import { Math } from './math';
+//import './number.js';
 
-alert(sum);
-
-export default App;
-/*
-export const App3 = ({ number }) => {
-  return <h1> { number } </h1>
-};*/
+export class App3 extends React.Component {
+  render() {
+    return <div>
+      <h1>Hello</h1>
+      <h2>{this.props.name}</h2>
+      <h3>{this.props.secondName}</h3>
+    </div>;
+  }
+}

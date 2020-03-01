@@ -1,10 +1,10 @@
 import React from 'react';
-import { App } from './number.js';
-import { myNum } from './number.js';
+import { App3 } from './App';
 
-export const sum = myNum * 2;
+export class Math extends React.Component {
+    render() {
+        return <App3 secondName = "Lis"/>;
+    }
+}
 
-/*export const App2 = ({ number }) => {
-    const newNumber = number * 2;
-    return <App3 number = { newNumber }/> 
-};*/
+export default Math;
