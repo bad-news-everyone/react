@@ -1,12 +1,7 @@
 import React from 'react';
-import { Math } from './math';
+import {App2} from './App2.js';
 
-export class App3 extends React.Component {
-  render() {
-    return <div>
-      <h1>Hello</h1>
-      <h2>{this.props.name} and { Math }</h2>
-      <h3>{ Math }</h3>
-    </div>;
-  }
+export const App = () => {
+  const newNumber = 4;
+  return <App2 number = {newNumber} />
 }
